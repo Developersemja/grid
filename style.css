@@ -213,7 +213,7 @@ html, body {
 }
 .grid-2-img---2{
     grid-column: 1 / 4; 
-    grid-row: 5 / 8;
+    grid-row: 5 / 10;
 }
 .grid-2-img---3{
     grid-column: 4 / 6; 

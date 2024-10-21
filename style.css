@@ -42,6 +42,10 @@ html, body {
     flex-basis: 31%; /* Takes up ~33% width */
 }
 
+.column-5 {
+    flex-basis: 21%; /* Takes up ~33% width */
+}
+
 /* Responsive Design (Stack columns on smaller screens) */
 @media (max-width: 768px) {
     .column {
@@ -226,4 +230,95 @@ html, body {
 .grid-2-img---10{
     grid-column: 8 / 10; 
     grid-row: 6 / 10;
+}
+
+/*---------------Testimonial-------------------*/
+
+.testimonial{
+    
+    background-color:blue;
+    height: 90vh;
+    margin-top: 4vh;
+}
+
+.testimonial-heading{
+    width: 100%;
+}
+.card{
+    width: 100%;
+    padding: 4vh 4vh 2vh 4vh;
+    min-height: 200px; 
+    max-width: 600px;
+    background-color: #e5533d;
+    border-radius: 8px;
+}
+
+.card h2,p{
+    padding-bottom: 2vh;
+}
+
+
+.client{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+.client figure img{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+}
+
+.client p{
+    padding-bottom: 0;
+}
+
+.testimonial-card{
+    width: 100%;
+    display: flex;
+    
+}
+
+/*---------------brainstorm-------------------*/
+
+.brainstorm{
+    height: 40vh;
+    background-color: violet;
+}
+
+.brainstorm-content{
+ width: 60%;
+ text-align: center;
+}
+
+/*---------------Footer-------------------*/
+
+.footer{
+    flex-direction: row;
+    padding: 5vh;
+    
+}
+.footer-1 img{
+    height: 5vh;
+    width: 5vh;
+}
+.footer-1{
+    align-self: self-start;
+}
+.column-5 ul{
+    list-style: none;
+  
+}
+
+.column-5 li{
+    padding-bottom:20px ;
+}
+
+.column-5 h2{
+    padding-bottom: 20px;
+}
+
+.footer :first-child img{
+    align-items: start;
 }

@@ -371,3 +371,19 @@ html, body {
     padding: 0 10vh 10vh 10vh;
     margin-top: -10vh;
 }
+
+/*---------------MF-client-logo-------------------*/
+
+.client-logo-img{
+    display: flex;
+    gap: 50px;
+
+}
+.client-logo-img img{
+    height: 10vh;
+    width: 20vh;
+}
+
+.client-logo-heading h2{
+    font-size: 48px;
+}

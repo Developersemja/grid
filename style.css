@@ -322,3 +322,35 @@ html, body {
 .footer :first-child img{
     align-items: start;
 }
+
+/*---------------Srength-------------------*/
+.strength_heading{
+    text-align: center;
+}
+
+.strength_heading h2{
+    font-size: 48px;
+    padding-bottom: 3vh;
+}
+.strength_heading p{
+    font-size: 20px;
+}
+.strength_category img{
+    height: 45px;
+    width: 45px;
+    margin-bottom: 2vh;
+}
+.strength_category h3{
+    font-size: 24px;
+    padding-bottom: 2vh;
+}
+.strength_category p{
+    font-size: 18px;
+}
+.strength_category{
+    flex-basis: 25%;
+    padding: 4vh;
+}
+.strength{
+    padding: 3vh;
+}

@@ -27,9 +27,7 @@ html, body {
 .column {
     flex: 1; /* Makes columns equal width */
     padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    
 }
 
 /* Example for 2 Columns layout */
@@ -322,7 +320,7 @@ html, body {
 .footer :first-child img{
     align-items: start;
 }
-
+/* -----------------------------------M_F------------------------------ */
 /*---------------Strength-------------------*/
 .strength_heading{
     text-align: center;
@@ -386,4 +384,42 @@ html, body {
 
 .client-logo-heading h2{
     font-size: 48px;
+}
+
+/*---------------MF-Content_img-------------------*/
+.content_with_image{
+    flex-direction: row;
+    
+}
+
+
+.content_img{
+    flex-basis: 22%;
+}
+
+.Content_content{
+    flex-basis: 70%;
+    margin: 4vh;
+    align-items: flex-start;
+}
+
+.Content_img img{
+    height: 50vh;
+    width: 40vh;
+    border-radius: 8PX;
+}
+
+.Content_content h2{
+    font-size: 48px;
+    padding-bottom: 2vh;
+    text-align: left;
+}
+
+.Content_content p{
+    font-size: 20px;
+}
+
+.mf_content_with_image{
+    margin-top: 13VH;
+    max-width: 1600px;
 }

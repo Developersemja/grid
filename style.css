@@ -323,7 +323,7 @@ html, body {
     align-items: start;
 }
 
-/*---------------Srength-------------------*/
+/*---------------Strength-------------------*/
 .strength_heading{
     text-align: center;
 }
@@ -353,4 +353,21 @@ html, body {
 }
 .strength{
     padding: 3vh;
+}
+
+/*---------------ISO-------------------*/
+.iso{
+    height: 40vh;
+    background-color: blue;
+    color: #ffffff;
+    
+}
+
+.iso h2{
+    font-size: 48px;
+}
+
+.iso-img{
+    padding: 0 10vh 10vh 10vh;
+    margin-top: -10vh;
 }

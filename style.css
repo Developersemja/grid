@@ -251,7 +251,7 @@ html, body {
     border-radius: 8px;
 }
 
-.card h2,p{
+.card h2 p{
     padding-bottom: 2vh;
 }
 
@@ -479,4 +479,81 @@ padding: 20px 25px;
 
 .faq{
     font-size: 48px;
+}
+
+
+/* -----------------------------BLOG-------------------------- */
+
+.Blog{
+    padding: 3vh;
+}
+
+.blog-main-heading{
+    font-size: 48px;
+}
+.blog01-img img{
+    height: 40vh;
+    width: 100%;
+}
+
+.blog01-content h3{
+    font-size: 48px;
+    padding: 2vh 0 2vh 0;
+}
+
+.blog01-content p{
+    font-size: 24px;
+}
+
+.blog0-heading img{
+    height: 20px;
+    width: 20px;
+}
+.blog0-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blog0-heading:hover img{
+    rotate: 45deg;
+    transition: ease 0.3s;
+}
+.blog02-img img{
+    height: 32vh;
+    width: 100%;
+}
+
+.blog02 .flex-center{
+    align-items: flex-start;
+}
+
+.blog02-content p{
+    font-size: 24px;
+}
+.blog02-content h3{
+    font-size: 48px;
+    padding: 1vh 0 1vh 0;
+}
+
+.featured{
+    padding: 2vh;
+}
+.featured-img img{
+    width: 100%;
+    height: 50vh;
+}
+
+.featured-content{
+    align-items: self-start;
+}
+
+.featured-content p{
+    font-size: 24px;
+}
+
+.featured-content h3{
+    font-size: 48px;
+    padding: 2vh 0 2vh 0;
 }

@@ -5,53 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Static Grayscale World Map with Client Logos</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    #map {
-      height: 500px;
-      width: 100%;
-      margin: 20px auto;
-    }
-  </style>
+
 </head>
 <body>
-  <h3>Static Grayscale World Map with Pinned Client Logos</h3>
-  <div id="map"></div>
   
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    // Initialize the map and set its view
-    var map = L.map('map', {
-      center: [20, 0],
-      zoom: 2,
-      zoomControl: false,
-      dragging: false,  // Disable dragging
-      scrollWheelZoom: false, // Disable scroll zoom
-      doubleClickZoom: false, // Disable double click zoom
-      boxZoom: false // Disable box zoom
-    });
-
-    // Set the world map outline image
-    L.imageOverlay('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/World_map_blank_without_borders.svg/1200px-World_map_blank_without_borders.svg.png', 
-                   [[-90, -180], [90, 180]]).addTo(map); // Adjust the bounds as needed
-
-    // Define a custom icon for client logos
-    var logoIcon = L.icon({
-      iconUrl: 'https://via.placeholder.com/30', // Replace with actual client logo URL
-      iconSize: [30, 30], // Adjust size if needed
-    });
-
-    // Add client location markers with custom logos or default icons
-    L.marker([37.7749, -122.4194], {icon: logoIcon}).addTo(map) // San Francisco
-      .bindPopup('Client 1: San Francisco'); // Popup on click
-
-    L.marker([48.8566, 2.3522], {icon: logoIcon}).addTo(map) // Paris
-      .bindPopup('Client 2: Paris'); // Popup on click
-
-    L.marker([35.6895, 139.6917], {icon: logoIcon}).addTo(map) // Tokyo
-      .bindPopup('Client 3: Tokyo'); // Popup on click
-  </script>
 </body>
 </html>

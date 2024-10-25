@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section>
+        <div class="container about">
+            <div class="row">
+                <div class="column-6 about-img flex-center">
+                    <img src="/hero.png" alt="">
+                </div>
+                <div class="column-6 about-content">
+                    <div class="row">
+                        <div class="column about-content">
+                            <p>Subheading</p>
+                            <h2>Heading</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim officia eum culpa iusto quis beatae quaerat consectetur nihil delectus nam, repellat aliquid ducimus voluptate dignissimos, similique magni inventore maiores aspernatur.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="tab-container">
+                            <div class="tab-header">
+                              <button onclick="openTab('tab1')" class="tab-link" id="defaultTab">Tab 1</button>
+                              <button onclick="openTab('tab2')" class="tab-link">Tab 2</button>
+                              <button onclick="openTab('tab3')" class="tab-link">Tab 3</button>
+                            </div>
+                          
+                            <div class="tab-content" id="tab1">
+                              <p>This is content for Tab 1</p>
+                              <button onclick="alert('Button in Tab 1')" class="tab-btn">Click Me</button>
+                            </div>
+                          
+                            <div class="tab-content" id="tab2" style="display:none;">
+                              <p>This is content for Tab 2</p>
+                              <button onclick="alert('Button in Tab 2')">Click Me</button>
+                            </div>
+                          
+                            <div class="tab-content" id="tab3" style="display:none;">
+                              <p>This is content for Tab 3</p>
+                              <button onclick="alert('Button in Tab 3')">Click Me</button>
+                            </div>
+                          </div>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function openTab(tabName) {
+            // Hide all tab content
+            const tabs = document.querySelectorAll(".tab-content");
+            tabs.forEach(tab => tab.style.display = "none");
+
+            // Remove active class from all tabs
+            const tabLinks = document.querySelectorAll(".tab-link");
+            tabLinks.forEach(link => link.classList.remove("active"));
+
+            // Show the selected tab content and mark the tab as active
+            document.getElementById(tabName).style.display = "block";
+            document.querySelector(`button[onclick="openTab('${tabName}')"]`).classList.add("active");
+            }
+
+            // Set default tab to open
+        document.getElementById("defaultTab").click();
+
+    </script>
+
+    <section>
+        <div class="container about-features">
+            <div class="row">
+                <div class="column-6  about-features-left">
+                    <p>Sub heading</p>
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto commodi minima beatae ratione nulla quibusdam vel rem, error harum non.</p>
+                </div>
+                <div class="column-6 flex-center about-features-logo-content">
+                    <div class="column-4 about-features-content flex-center">
+                        <img src="/hero.png" alt="">
+                        <h2>Heading</h2>
+                    </div>
+                    <div class="column-4 about-features-content flex-center">
+                        <img src="/hero.png" alt="">
+                        <h2>Heading</h2>
+                    </div>
+                    <div class="column-4 about-features-content flex-center">
+                        <img src="/hero.png" alt="">
+                        <h2>Heading</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

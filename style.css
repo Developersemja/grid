@@ -682,8 +682,8 @@ padding: 20px 25px;
 
   .about-grid {
     display: grid;
-    grid-template-columns: repeat(4, 5vw); /* Defines four equal-width columns */
-    grid-template-rows: repeat(4, 5vw);    /* Defines rows with a fixed height */
+    grid-template-columns: repeat(4, 10vw); /* Defines four equal-width columns */
+    grid-template-rows: repeat(4, 10vw);    /* Defines rows with a fixed height */
     gap: 10px;                              /* Adds space between grid items */
 }
 

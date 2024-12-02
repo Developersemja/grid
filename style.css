@@ -847,3 +847,26 @@ img {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+ /* Add your existing CSS styles here */
+ .tabs {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  .tab {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+  .tab.active {
+    background-color: #007BFF;
+    color: white;
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }

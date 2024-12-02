@@ -852,6 +852,10 @@ img {
     display: flex;
     cursor: pointer;
     margin-bottom: 1rem;
+   
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .tab {
     padding: 10px 20px;
